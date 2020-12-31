@@ -7,7 +7,7 @@ namespace ListCRUD.Data
     {
         public ListContext(DbContextOptions<ListContext> options) : base(options) {}
 
-        public DbSet<ListModel<ItemModel>> Lists { get; set; }
+        public DbSet<ListModel> Lists { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

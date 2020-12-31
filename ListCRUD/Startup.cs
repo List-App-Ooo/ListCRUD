@@ -31,7 +31,7 @@ namespace ListCRUD
         {
 
             services.AddControllers();
-            services.AddDbContext<ListContext>(opt => opt.UseInMemoryDatabase("dbTodoInMemory"));
+            services.AddDbContext<ListContext>(opt => opt.UseInMemoryDatabase("dbListInMemory"));
             services.AddScoped<IListRepo, ListRepo>();
             services.AddScoped<IListService, ListService>();
             services.AddSwaggerGen(c =>
