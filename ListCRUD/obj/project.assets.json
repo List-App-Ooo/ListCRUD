@@ -1356,6 +1356,7 @@
     "net5.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.0",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 5.0.0",
+      "Microsoft.EntityFrameworkCore >= 5.0.1",
       "Microsoft.EntityFrameworkCore.InMemory >= 5.0.1",
       "Microsoft.Extensions.Configuration.FileExtensions >= 5.0.0",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0",
@@ -1412,6 +1413,10 @@
             "noWarn": [
               "NU1605"
             ]
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
