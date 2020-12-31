@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ListCRUD.Data;
+using ListCRUD.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,7 @@ namespace ListCRUD
 
             services.AddControllers();
             services.AddScoped<IListRepo, ListRepo>();
+            services.AddScoped<IListService, ListService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ListCRUD", Version = "v1" });
