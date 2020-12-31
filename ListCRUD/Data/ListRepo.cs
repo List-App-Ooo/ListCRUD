@@ -16,9 +16,9 @@ namespace ListCRUD.Data
             this._context = context;
         }
 
-        public async Task<ListModel> GetList(Guid id)
+        public async Task<ListModel> GetList(string title)
         {
-            return await _context.Lists.FirstOrDefaultAsync(m => m.Id == id);
+            return await _context.Lists.FirstOrDefaultAsync(m => m.Title == title);
         }
 
         public Task<List<ListModel>> GetLists()

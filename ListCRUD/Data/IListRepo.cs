@@ -8,6 +8,6 @@ namespace ListCRUD.Data
     public interface IListRepo
     {
         Task<List<ListModel>> GetLists();
-        Task<ListModel> GetList(Guid id);
+        Task<ListModel> GetList(string title);
     }
 }

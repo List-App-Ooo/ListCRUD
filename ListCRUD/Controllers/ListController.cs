@@ -17,10 +17,10 @@ namespace ListCRUD.Controllers
             this._service = service;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetList(Guid id)
+        [HttpGet("{title}")]
+        public async Task<IActionResult> GetList(string title)
         {
-            var result = await _service.GetList(id);
+            var result = await _service.GetList(title);
             return Ok(result);
         }
     }
