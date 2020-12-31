@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using ListCRUD.Models;
 
-namespace TodoCRUD.Data
+namespace ListCRUD.Data
 {
     public class ListContext : DbContext
     {
         public ListContext(DbContextOptions<ListContext> options) : base(options) {}
 
-        public DbSet<ListModel<object>> Lists { get; set; }
+        public DbSet<ListModel<ItemModel>> Lists { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
