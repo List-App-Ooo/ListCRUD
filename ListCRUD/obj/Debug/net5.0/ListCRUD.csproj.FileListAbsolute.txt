@@ -1,0 +1,7 @@
+C:\Users\Admin\Workspace\ListApp\ListCRUD\ListCRUD\obj\Debug\net5.0\ListCRUD.csprojAssemblyReference.cache
+C:\Users\Admin\Workspace\ListApp\ListCRUD\ListCRUD\obj\Debug\net5.0\ListCRUD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Workspace\ListApp\ListCRUD\ListCRUD\obj\Debug\net5.0\ListCRUD.AssemblyInfoInputs.cache
+C:\Users\Admin\Workspace\ListApp\ListCRUD\ListCRUD\obj\Debug\net5.0\ListCRUD.AssemblyInfo.cs
+C:\Users\Admin\Workspace\ListApp\ListCRUD\ListCRUD\obj\Debug\net5.0\ListCRUD.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Workspace\ListApp\ListCRUD\ListCRUD\obj\Debug\net5.0\ListCRUD.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\Workspace\ListApp\ListCRUD\ListCRUD\obj\Debug\net5.0\ListCRUD.MvcApplicationPartsAssemblyInfo.cache

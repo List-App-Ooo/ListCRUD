@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ListCRUD.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ListCRUD.Data
 {
     public class ListRepo : IListRepo
     {
-        private readonly ListContext _listContext;
+        private readonly ListContext _context;
 
-        public ListRepo(ListContext listContext)
+        public ListRepo(ListContext context)
         {
-            this._listContext = listContext;
+            this._context = context;
         }
 
-        public Task<ListModel<ItemModel>> GetList(Guid id)
+        public async Task<ListModel<ItemModel>> GetList(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.Lists.FirstOrDefaultAsync(m => m.Id == id);
         }
 
         public Task<List<ListModel<ItemModel>>> GetLists()
