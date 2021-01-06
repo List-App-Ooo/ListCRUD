@@ -31,9 +31,15 @@ namespace ListCRUD
         {
 
             services.AddControllers();
+            services.AddHttpClient();
             services.AddDbContext<ListContext>(opt => opt.UseInMemoryDatabase("dbListInMemory"));
             services.AddScoped<IListRepo, ListRepo>();
             services.AddScoped<IListService, ListService>();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowOrigin",
+                    builder => builder.AllowAnyOrigin());
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ListCRUD", Version = "v1" });
@@ -55,6 +61,8 @@ namespace ListCRUD
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("AllowOrigin");
 
             app.UseEndpoints(endpoints =>
             {
