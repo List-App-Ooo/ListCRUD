@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace ListCRUD.Models
 {
-    public class ListModel<T>
+    public class ListModel
     {
         public Guid Id { get; set; }
         public string Title { get; set; }
         public int TotalItems { get; set; }
-        public T Type { get; set; }
+        public ItemType Type { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 namespace ListCRUD.Models
 {
-    public class TypeModel
+    public class ItemType
     {
         
     }

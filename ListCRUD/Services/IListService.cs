@@ -6,6 +6,6 @@ namespace ListCRUD.Services
 {
     public interface IListService
     {
-        Task<ListModel<TypeModel>> GetList(Guid id);
+        Task<ListModel> GetList(Guid id);
     }
 }

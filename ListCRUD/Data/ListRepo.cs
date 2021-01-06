@@ -16,12 +16,12 @@ namespace ListCRUD.Data
             this._context = context;
         }
 
-        public async Task<ListModel<TypeModel>> GetList(Guid id)
+        public async Task<ListModel> GetList(Guid id)
         {
             return await _context.Lists.FirstOrDefaultAsync(m => m.Id == id);
         }
 
-        public Task<List<ListModel<TypeModel>>> GetLists()
+        public Task<List<ListModel>> GetLists()
         {
             throw new NotImplementedException();
         }
