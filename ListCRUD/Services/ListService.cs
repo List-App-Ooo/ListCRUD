@@ -14,7 +14,7 @@ namespace ListCRUD.Services
             this._repo = repo;
         }
 
-        public async Task<ListModel> GetList(Guid id)
+        public async Task<ListModel<TypeModel>> GetList(Guid id)
         {
             return await _repo.GetList(id);
         }

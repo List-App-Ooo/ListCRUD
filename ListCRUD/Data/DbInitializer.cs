@@ -16,7 +16,7 @@ namespace ListCRUD.Data
                 return;
             }
 
-            var list = new ListModel();
+            var list = new ListModel<TypeModel>();
             list.Id = new Guid("ef6a7925-80a6-44bc-9e03-89bc7ca3586e");
             list.Title = "Todo List #1";
             list.TotalItems = 3;
