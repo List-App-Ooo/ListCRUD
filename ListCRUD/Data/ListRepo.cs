@@ -21,9 +21,10 @@ namespace ListCRUD.Data
             return await _context.Lists.FirstOrDefaultAsync(m => m.Id == id);
         }
 
-        public Task<List<ListModel>> GetLists()
+        public Task<List<ListModel>> GetLists(Guid userId)
         {
             throw new NotImplementedException();
+            // return await _context.Lists.Where(m => m.UserId == userId).ToList();
         }
     }
 }

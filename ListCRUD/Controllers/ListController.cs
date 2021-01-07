@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ListCRUD.Controllers
 {
     [ApiController]
-    [Route("api/list")]
+    [Route("api/[controller]")]
     public class ListController : ControllerBase
     {
         private readonly IListService _service;
@@ -20,8 +20,13 @@ namespace ListCRUD.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetList(Guid id)
         {
-            var result = await _service.GetList(id);
-            return Ok(result);
+            return Ok(await _service.GetList(id));
         }
+
+        // [HttpGet("{userId}")]
+        // public async Task<IActionResult> GetLists(Guid userId)
+        // {
+        //     return await _service.GetLists(userId);
+        // }
     }
 }

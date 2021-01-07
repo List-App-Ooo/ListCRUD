@@ -18,5 +18,10 @@ namespace ListCRUD.Services
         {
             return await _repo.GetList(id);
         }
+
+        public Task<ListModel> GetLists(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

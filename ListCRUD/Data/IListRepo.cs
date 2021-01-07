@@ -7,7 +7,7 @@ namespace ListCRUD.Data
 {
     public interface IListRepo
     {
-        Task<List<ListModel>> GetLists();
+        Task<List<ListModel>> GetLists(Guid userId);
         Task<ListModel> GetList(Guid id);
     }
 }
