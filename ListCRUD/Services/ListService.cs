@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ListCRUD.Data;
 using ListCRUD.Models;
@@ -19,9 +20,9 @@ namespace ListCRUD.Services
             return await _repo.GetList(id);
         }
 
-        public Task<ListModel> GetLists(Guid id)
+        public async Task<IEnumerable<ListModel>> GetLists(Guid id)
         {
-            throw new NotImplementedException();
+            return await _repo.GetLists(id);
         }
     }
 }

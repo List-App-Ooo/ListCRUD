@@ -23,10 +23,10 @@ namespace ListCRUD.Controllers
             return Ok(await _service.GetList(id));
         }
 
-        // [HttpGet("{userId}")]
-        // public async Task<IActionResult> GetLists(Guid userId)
-        // {
-        //     return await _service.GetLists(userId);
-        // }
+        [HttpGet("user/{userId}")]
+        public async Task<IActionResult> GetLists(Guid userId)
+        {
+            return Ok(await _service.GetLists(userId));
+        }
     }
 }
